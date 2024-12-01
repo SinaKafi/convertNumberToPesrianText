@@ -42,7 +42,7 @@ function convertNumberToPersianWords(number) {
 
   let word = "";
   let scaleIndex = 0;
-  zzzz;
+
   while (number > 0) {
     let chunk = number % 1000;
     if (chunk > 0) {
@@ -70,5 +70,4 @@ function convertNumberToPersianWords(number) {
 
   return word.trim() + " تومان";
 }
-
 console.log(convertNumberToPersianWords(1250600));
